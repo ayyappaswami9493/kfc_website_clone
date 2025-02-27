@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Order - KFC</title>
+    <link rel="stylesheet" href="{% static 'css/startorder.css' %}">
+</head>
+<body>
+
+    <!-- Overlay (background fade effect) -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Order Modal -->
+    <div class="modal" id="orderModal">
+        <div class="modal-header">
+            <h2>START YOUR ORDER</h2>
+            <a href="{% url 'app2:menu' %}"><span class="close-btn" id="closeModal">&times;</span></a>
+        </div>
+        <div class="modal-content">
+            <h3>HOW WOULD YOU LIKE TO RECEIVE YOUR ORDER?</h3>
+            <button class="order-option">Delivery</button>
+            <button class="order-option">Pick up</button>
+            <button class="order-option">Dine In</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("closeModal").addEventListener("click", function() {
+            document.getElementById("orderModal").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        });
+    </script>
+
+</body>
+</html>

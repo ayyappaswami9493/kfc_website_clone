@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 2px solid #ddd;
+}
+
+.header .logo img {
+    width: 80px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.top-banner {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.start-order-btn {
+    background-color: #d61f26;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.start-order-btn:hover {
+    background-color: #a81419;
+}
+
+.cart-container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cart-container h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.cart-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart-image {
+    width: 50%;
+    max-width: 500px;
+    margin-top: 20px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    
+    {% include 'nav.html' %}
+    {% block content %}
+    <nav id="second_nav">
+        <div >
+            <a href="{% url 'app1:home' %}"><img id="kfc" src="{% static 'images/kfc-logo.png' %}"  alt=""></a>
+        </div>
+        <div class="nav2">
+           <a href="{% url 'app2:menu' %}"> <p id="menu" >Menu</p></a>
+            <a href="{% url 'app1:deals' %}"><p id="deals">Deals</p></a>
+          <div id="sign_in"><a href="{% url 'app1:signin' %}">sign in </a><i class="fa-solid fa-user-plus"></i> 
+
+          </div>
+        </div>
+        
+    </nav>
+    <nav id="third_nav">LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN
+        <a href="{% url 'app2:startorder' %}"><button id="order">Start Order</button></a>
+    </nav>
+    <div id="home_div">
+        <div>
+            <img  src="{% static 'images/kfc.jpg' %}" id="epic_bucket" alt="">
+            <p id="epic">EPIC BUCKET OF THE DAY</p>
+        </div>
+    </div>
+    <div id="child2">
+        <div><img class="child2" src="{% static 'images/CAT89.webp' %}" alt=""> 
+            <div>
+                <p class="child4"></p>
+            </div>
+        </div>
+                <div><img class="child2" src="{% static 'images/CAT92.webp' %}" alt=""></div>
+                <div ><img class="child3" src="{% static 'images/CAT89.webp' %}" alt=""></div>
+                <div ><img class="child3" src="{% static 'images/kfc.jpg' %}" alt=""></div>
+        </div>
+    </div>
+    {% endblock %}
+    <div id="second_parent">
+        <div class="second_child"></div>
+        <div class="second_child"></div>
+    </div>
+    
+</body>
+</html>

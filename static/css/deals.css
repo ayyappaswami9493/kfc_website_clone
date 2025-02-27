@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Location Bar */
+.location-bar {
+    background: #f8f8f8;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.set-location {
+    background: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sign-in {
+    font-size: 24px;
+    cursor: pointer;
+    font-style: oblique;
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+}
+
+.nav a{
+    text-decoration: none;
+}
+.logo {
+    width: 100px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Black Banner */
+.black-banner {
+    background: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-btn {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Menu Section */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}

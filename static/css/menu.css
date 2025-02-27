@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo a{
+    text-decoration: none;
+    color: red;
+    
+}
+#image-kfc{
+    width: 100px;
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.banner {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.order-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    background: #f8f8f8;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover {
+    color: red;
+}
+
+.content {
+    width: 75%;
+    padding: 20px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+.offers {
+    display: flex;
+    gap: 20px;
+}
+
+.offer-card {
+    background: red;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+}
+
+.offer-card h3 {
+    margin-bottom: 10px;
+}

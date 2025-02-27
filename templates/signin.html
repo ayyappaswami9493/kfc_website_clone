@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC Sign In</title>
+    <link rel="stylesheet" href="{% static 'css/signin.css' %}">
+</head>
+<body>
+    <div class="container">
+        <p class="small-text">Sign In / Sign up</p>
+        <a href="{% url 'app1:home' %}"><img class="logo" src="{% static 'images/kfc-logo.png' %}" alt=""></a>
+        <h2 class="title">LET’S SIGN IN OR CREATE ACCOUNT WITH YOUR <br> PHONE NUMBER!</h2>
+
+        <form method="post">
+            {% csrf_token %}
+            <label for="phone">Phone Number*</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <p class="terms">
+                By “logging in to KFC”, you agree to our 
+                <a href="#">Privacy Policy</a> and 
+                <a href="#">Terms & Conditions</a>.
+            </p>
+
+            <button type="submit" class="btn">Send Me a Code</button>
+        </form>
+
+        <div class="divider">
+            <hr> <span>or</span> <hr>
+        </div>
+
+        <button class="guest-btn">Skip, Continue As Guest</button>
+    </div>
+</body>
+</html>

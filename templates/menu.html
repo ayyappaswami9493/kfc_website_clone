@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC Menu</title>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="{% url 'app1:home' %}"><img width="100px" src="{% static 'images/kfc-logo.png' %}" alt=""></a>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'app2:menu' %}">Menu</a></li>
+                    <li><a href="{% url 'app1:deals' %}">Deals</a></li>
+                </ul>
+            </nav>
+            <div class="account">
+                <span>Account</span>
+                <a href="{% url 'app2:cart' %}"><img src="{% static 'images/bucket_cart_icon.svg' %}" alt="Cart" class="cart-icon"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <h2>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h2>
+        <a href="{% url 'app2:startorder' %}"><button class="order-btn">Start Order</button></a>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>KFC MENU</h3>
+            <ul>
+                <li>EPIC BUCKET OF THE DAY</li>
+                <li>WEDNESDAY SPECIAL</li>
+                <li>BOX MEALS</li>
+                <li>VARIETY BUCKET</li>
+                <li>CHICKEN BUCKETS</li>
+                <li>BURGERS</li>
+                <li>SNACKS</li>
+                <li>VALUE LUNCH SPECIALS</li>
+                <li>RICE BOWLZ</li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h2>SAVE MORE AS YOU ORDER</h2>
+            <div class="offers">
+                <div class="offer-card">
+                    <h3>2PC HOT & CRISPY @ ₹99</h3>
+                    <p>Add 2 Pc Hot N Crispy Chicken at just Rs 99 on min cart value.</p>
+                </div>
+                <div class="offer-card">
+                    <h3>UPTO ₹100/- OFF</h3>
+                    <p>Get Rs 100 off on min cart value of Rs 699 or more.</p>
+                </div>
+                <div class="offer-card">
+                    <h3>ZINGER WEEKEND</h3>
+                    <p>Buy any zinger and get a free classic chicken zinger.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC Cart</title>
+    <link rel="stylesheet" href="{% static 'css/cart.css' %}">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="{% url 'app1:home' %}"><img src="{% static 'images/kfc-logo.png' %}" width="100px" alt="KFC Logo"></a>
+        </div>
+        <nav class="menu">
+            <a href="{% url 'app2:menu' %}">Menu</a>
+            <a href="{% url 'app1:deals' %}">Deals</a>
+        </nav>
+        <div class="cart">
+            <img src="{% static 'images/bucket_cart_icon.svg' %}" alt="Cart" class="cart-icon">
+        </div>
+    </header>
+
+    <!-- Top Banner -->
+    <div class="top-banner">
+        LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN
+         <a href="{% url 'app2:startorder' %}"><button class="start-order-btn">Start Order</button></a>
+    </div>
+
+    <!-- Cart Section -->
+    <section class="cart-container">
+        <h1>MY CART</h1>
+        <h2>YOUR CART IS EMPTY. LET'S START AN ORDER!</h2>
+        <img src="{% static 'images/kfc.jpg' %}" alt="Empty Cart" class="cart-image">
+        <br>
+        <button class="start-order-btn">Start Order</button>
+    </section>
+
+</body>
+</html>
