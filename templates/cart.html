@@ -35,7 +35,7 @@
         <h2>YOUR CART IS EMPTY. LET'S START AN ORDER!</h2>
         <img src="{% static 'images/kfc.jpg' %}" alt="Empty Cart" class="cart-image">
         <br>
-        <button class="start-order-btn">Start Order</button>
+        <a href="{% url 'app2:startorder' %}">   <button class="start-order-btn">Start Order</button></a>
     </section>
 
 </body>
